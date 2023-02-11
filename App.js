@@ -1,3 +1,8 @@
+// the basic differnce between useState and useRef is that useState goes through the entire lifecycle of component re-rendering like unmounting and updating the component again and again but useRef will will have a dependency on other components to get its render as it will render the final updated value only once
+
+// this is the reason why useRef does not suffer from infinite loop problem
+
+
 import './App.css';
 import Header from './Components/Header';
 import {useRef,useEffect, useState} from 'react';
